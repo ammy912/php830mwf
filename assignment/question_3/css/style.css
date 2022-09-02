@@ -1,0 +1,19 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: gainsboro !important;
+    overflow-x: hidden;
+}
+.product-img
+{
+    max-width: 100%;
+    height: auto;
+    background-color: white;
+}
+.product-img img
+{
+    width: 100%;
+    height: 270px;
+    margin: 8%;
+}

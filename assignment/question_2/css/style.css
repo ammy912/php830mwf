@@ -1,0 +1,28 @@
+body
+{
+    margin: 0%;
+    margin-top: 5%;
+    padding: 0%;
+    overflow-x: hidden;
+    background-color: purple !important;
+}
+
+.my-profile,.my-profile1
+{
+    max-width: 100% !important;
+    height: auto;
+    border-right: solid 1px gray;
+}
+#btn 
+{
+    width: 200px;
+    height: auto;
+    margin: auto;
+    margin-top: 4%;
+    margin-left: -95px;
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}

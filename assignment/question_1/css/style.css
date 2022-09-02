@@ -1,0 +1,32 @@
+body
+{
+    background-color: blueviolet;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+
+.form
+{
+    background-color: bisque;
+    width: 80%;
+    margin-left: 12%;
+    height: 60%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+}
+
+#btn
+{
+    width: 20%;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+    margin-left: 40%;
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    border-radius: 55px;
+}
