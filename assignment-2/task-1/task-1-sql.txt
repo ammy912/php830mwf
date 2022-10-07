@@ -1,0 +1,110 @@
+     TASK__1  
+
+     TABLE: EMPLOYEE      
+
+Que.1
+    create database employeedb;
+
+
+Que.2
+create table employee
+(
+    id int primary key AUTO_INCREMENT,
+    firs_tname varchar(155),
+    last_name varchar(155),
+    salary float,
+    joining_date varchar(155),
+    depertment varchar(155)
+)
+
+
+Oue.3
+insert into employee
+(firs_tname,last_name,salary,joining_date,depertment) value('ammy','patel','100000','06-09-2021','IT'),
+('jeni','rakholiya','60000','06-09-2021','EC'),
+('mansi','patoliya','750000','19-09-2021','BANKING'),
+('foram','patel','780000','23-12-2021','IT'),
+('aayushi','areniya','55000','01-08-2022','SERVICES'),
+('anshu','pipaliya','8000','06-06-2022','INSURENCE'),
+('aneri','sidpra','60000','06-09-2022','EC'),
+('foram','patel','57000','20-02-2021','CS'),
+('riya','borad','25000','01-10-2022','MANAGER')
+
+     
+
+    TABLE: INCENTIVE
+
+Que.4
+create table incentives
+(
+    id int primary key AUTO_INCREMENT,	
+    employee_ref_id varchar(255),
+    incentive_date varchar(255), 
+    incentive_amt varchar(255)
+)
+
+
+Que. 5
+insert into incentives
+(employee_ref_id,incentive_date,incentive_amt) value('1','26-10-2021','10000'),
+('3','01-08-2022','15000'),
+('4','02-10-2020','23000'),
+('2','15-2-2021','55000'),
+('7','10-01-2019','45000'),
+('5','23-5-2021','30000'),
+('10','05-05-2022','25000'),
+('11','13-07-2020','60000'),
+('8','15-08-2022','40000'),
+('9','27-12-2022','25000')
+
+
+Que.5
+SELECT firs_tname as alias_name from employee;
+
+
+Que.6
+SELECT firs_tname,joining_date FROM employee;
+
+Que.7
+SELECT*FROM employee order by firs_tname asc;
+
+SELECT*FROM employee order by salary DESC;
+
+
+Que.8
+SELECT*FROM employee where firs_tname like 'a%'; 
+
+
+Que.9
+SELECT*FROM employee WHERE joining_date LIKE '06-09-2021';
+
+
+Que.10
+SELECT sum(salary) as total_sumof_salary FROM employee ORDER BY sum(salary) DESC;
+
+Que.11
+select max(salary)  FROM employee order by max(salary) asc;
+
+
+Que.12
+Select first_name, incentive amount from employee and incentives table for those 
+Employees who have incentives and incentive amount greater than 3000
+
+
+Que.13
+SELECT max(salary) from employee WHERE salary < (SELECT max(salary) FROM employee);
+
+Que.14
+Select first_name, incentive amount from employee and incentives table for all 
+Employees who got incentives using left join.
+
+Que.15
+SELECT firs_tname,last_name,salary FROM employee;
+
+Que.16
+SELECT depertment, MAX(salary) FROM employee GROUP BY depertment;
+
+
+
+         TASK__2
+
